@@ -4,8 +4,6 @@
     font-style: normal;
 }
 
-.rounded {
-    border-radius: 50%;
-    border: 1px solid lightgray;
-
+.box_shadow {
+    box-shadow: -3px 3px 3px lightgray;
 }

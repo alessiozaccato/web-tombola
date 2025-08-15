@@ -7,3 +7,7 @@
 .box_shadow {
     box-shadow: -3px 3px 3px lightgray;
 }
+
+.box_shadow_coral {
+    box-shadow: -3px 3px 3px lightcoral;
+}

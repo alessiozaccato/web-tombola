@@ -1,3 +1,17 @@
+
+// Autogenerate grid of numbers with for loop
+const board = document.getElementById('tombola-board');
+let html = '';
+for (let row = 0; row < 9; row++) {
+    html += '<div class="row mb-2 g-1">';
+    for (let col = 1; col <= 10; col++) {
+        const num = row * 10 + col;
+        html += `<div class="col"><span class="rounded-circle p-1 bg-white box_shadow">${num}</span></div>`;
+    }
+    html += '</div>';
+}
+board.innerHTML = html;
+
 // link the button that i need from css 
 let extractionButton = document.querySelector('#extract');
 
@@ -26,17 +40,12 @@ function extraction() {
         return;
     }
 
-    let randomIndex = Math.floor(Math.random() * numbersValues.length)
-    let numberExtracted = numbersValues[randomIndex];
+    let randomIndex = Math.floor(Math.random() * numbersValues.length);
+    let extractedNumber = numbersValues[randomIndex];
     numbersValues.splice(randomIndex, 1);
-    numbersGone.push(numberExtracted);
-    return extractedNumberText.innerHTML = numberExtracted;
+    numbersGone.push(extractedNumber);
+    return extractedNumberText.innerHTML = extractedNumber;
 }
-
-
-
-
-
 
 extractionButton.addEventListener("click", () => {
     extraction();

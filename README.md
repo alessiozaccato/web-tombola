@@ -11,6 +11,9 @@ Un semplice progetto web che simula il gioco della Tombola italiana, realizzato 
 L'applicazione genera automaticamente una griglia di 90 numeri (da 1 a 90) e permette di estrarre numeri casuali uno alla volta, evidenziando quelli già usciti. È pensata per essere usata su PC, tablet o LIM durante giochi di gruppo. 🎉
 
 
+![Gameplay di Tomboola](screenshots/gameplay.gif)
+
+
 ## 🛠️ Tecnologie utilizzate
 
 - **HTML5** 📄
